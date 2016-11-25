@@ -6,20 +6,15 @@ def get_closest_pair():
 	ratio of the two is as close to pi as possible
 	'''
 	target = pi
-
 	best_num = 1.
 	best_denom = 1.
-
 	tempDenom = 1.0
 	tempNum = None
 
 	while tempDenom <= 333.0:
-
 		tempNum = tempDenom * 3
 		upper_limit = tempDenom * 3.5
-
 		while tempNum < 1000.0 and tempNum < upper_limit:
-
 			if abs((tempNum / tempDenom) - target) < abs((best_num / best_denom) - target):
 				best_num = tempNum
 				best_denom = tempDenom
